@@ -1,0 +1,70 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <!-- Home Servlet -->
+  <servlet>
+    <servlet-name>homeServlet</servlet-name>
+    <servlet-class>hotel.servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>homeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add Reservation -->
+  <servlet>
+    <servlet-name>AddReservationServlet</servlet-name>
+    <servlet-class>hotel.servlet.AddReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddReservationServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <!-- View Reservations -->
+  <servlet>
+    <servlet-name>ViewReservationServlet</servlet-name>
+    <servlet-class>hotel.servlet.ViewReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewReservationServlet</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+
+  <!-- Get Reservation -->
+  <servlet>
+    <servlet-name>GetReservationServlet</servlet-name>
+    <servlet-class>hotel.servlet.GetReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetReservationServlet</servlet-name>
+    <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+
+  <!-- Update Reservation -->
+  <servlet>
+    <servlet-name>UpdateReservationServlet</servlet-name>
+    <servlet-class>hotel.servlet.UpdateReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateReservationServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
+  <!-- Delete Reservation -->
+  <servlet>
+    <servlet-name>DeleteReservationServlet</servlet-name>
+    <servlet-class>hotel.servlet.DeleteReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteReservationServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+   <welcome-file-list>
+    <welcome-file>home</welcome-file>
+  </welcome-file-list>
+
+</web-app>
